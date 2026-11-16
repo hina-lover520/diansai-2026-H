@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"D:/TI_ti/ccs/utils/bin/gmake\" -k -j 24 all -r -O)",
+      "Bash(xxd)",
+      "Bash(xxd \"C:/Users/HP/workspace_ccstheia/imu660rb-fusion-oled-hardware-spi/main.c\")",
+      "Bash(cp main.c main.c.bak)",
+      "Bash(sed -i -e 's/Servo_setAngle\\(1, Angle +30\\);/Servo_setAngle\\(1, Angle\\);/' -e 's/Servo_setAngle\\(2, Angle +30\\);/Servo_setAngle\\(2, Angle\\);/' -e 's/Angle >180/Angle > 180/' -e 's/Angle =0/Angle = 0/' -e '/if\\(Count >= 1000\\)/{n;s/.*/            Count = 0;\\\\n            Angle += 30;/}' -e 's/Servo_setAngle\\(1 ,Angle\\);/Servo_setAngle\\(1, Angle\\);/' -e 's/Servo_setAngle\\(2 ,Angle\\);/Servo_setAngle\\(2, Angle\\);/' main.c)",
+      "Bash(pip install *)",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import PyPDF2; print\\('PyPDF2 available'\\)\")",
+      "Bash(python -c \"import pikepdf; print\\('pikepdf available'\\)\")",
+      "Bash(python -c \"import pdfplumber; print\\('pdfplumber available'\\)\")",
+      "Bash(python -c \"import fitz; print\\('fitz available'\\)\")",
+      "Bash(python *)"
+    ]
+  }
+}
